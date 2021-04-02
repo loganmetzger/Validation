@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Validation</string>
+    <string name="tv_name_prompt">What\'s Your Name?</string>
+    <string name="and_your_email">And, your email?</string>
+    <string name="email">Email</string>
+    <string name="create_a_password">Create a password</string>
+    <string name="password">password</string>
+    <string name="welcome">Welcome to Lonely Mountain App</string>
+    <string name="image_mountain_description">Image of mountain</string>
+    <string name="last_name">Last Name</string>
+    <string name="get_from_intent">get from intent</string>
+    <string name="first_name">First Name</string>
+</resources>

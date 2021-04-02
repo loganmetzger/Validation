@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NameActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_name_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_name_prompt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintVertical_bias=".17" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/tv_name_prompt"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_prompt" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_first_name"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_first_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        app:layout_constraintStart_toStartOf="@id/tv_name_prompt"
+        app:layout_constraintTop_toBottomOf="@id/et_first_name" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_last_name"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_last_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_last_name"
+        android:layout_marginEnd="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_to_email"
+        android:layout_width="38dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_last_name"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+        app:icon="@drawable/ic_arrow_forward_ios_24px"
+        app:iconPadding="0dp"
+        app:iconGravity="textStart"
+        android:layout_marginTop="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
